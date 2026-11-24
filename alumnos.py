@@ -145,7 +145,7 @@ def listar_alumnos(alumnos: dict) -> None:
         alumnos (dict): Diccionario con los alumnos registrados.
     """
 
-    if len(alumnos) == 0:
+    if len(alumnos) <= 0:
         print("No hay alumnos registrados.")
         return
 
@@ -192,10 +192,7 @@ def buscar_alumno(alumnos: dict) -> None:
     # Obtenemos los datos correspondientes a ese DNI.
     datos = alumnos[dni]
 
-    print("Alumno encontrado:")
-
-    # Mostramos la información del alumno.
-    mostrar_alumno(dni, datos)
+    return dni, datos
 
 
 # Muestra las opciones disponibles para modificar un alumno.

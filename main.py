@@ -6,7 +6,8 @@ from alumnos import (
     listar_alumnos,
     buscar_alumno,
     modificar_alumno,
-    eliminar_alumno
+    eliminar_alumno,
+    mostrar_alumno
 )
 
 from estadisticas import mostrar_estadisticas
@@ -50,7 +51,9 @@ def main() -> None:
                 listar_alumnos(alumnos)
 
             case "3":
-                buscar_alumno(alumnos)
+                dni, datos = buscar_alumno(alumnos)
+                print("Alumno encontrado:")
+                mostrar_alumno(dni, datos)
 
             case "4":
                 resultado = modificar_alumno(alumnos)

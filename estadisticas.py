@@ -80,7 +80,7 @@ def obtener_mejor_alumno(alumnos: dict) -> tuple:
 
 def mostrar_estadisticas(alumnos: dict) -> None:
     """
-    Calcula y muestra las estadísticas generales de los alumnos.
+    Toma los datos ya calculados y muestra las estadísticas generales de los alumnos.
 
     Args:
         alumnos (dict): Diccionario con los alumnos registrados.
