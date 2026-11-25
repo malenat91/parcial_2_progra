@@ -28,7 +28,7 @@ def main() -> None:
     while opcion != "7":
 
         print("\n===== SISTEMA DE GESTIÓN DE ALUMNOS =====")
-        print("1. Agregar alumno")
+        print("1. Registrar alumno")
         print("2. Listar alumnos")
         print("3. Buscar alumno")
         print("4. Modificar alumno")

@@ -64,7 +64,7 @@ def pedir_nombre(mensaje: str) -> str:
     nombre = input(mensaje)
 
     while validar_nombre(nombre) == False:
-        print("El campo no puede estar vacío.")
+        print("El dato ingresado no es válido. ")
         nombre = input(mensaje)
 
     return nombre
@@ -73,35 +73,42 @@ def pedir_nombre(mensaje: str) -> str:
 # Solicita una edad y comprueba que no sea negativa.
 def pedir_edad() -> int:
     """
-    Solicita la edad y verifica que no sea negativa.
+    Solicita la edad y verifica que sea numérica
+    y no sea negativa.
 
     Returns:
         int: Edad ingresada por el usuario.
     """
-    edad = int(input("Ingrese la edad: "))
+
+    edad = input("Ingrese la edad: ")
 
     while validar_edad(edad) == False:
-        print("La edad no puede ser negativa.")
-        edad = int(input("Ingrese la edad: "))
+        print("La edad debe ser un número positivo.")
+        edad = input("Ingrese la edad: ")
 
-    return edad
+    return int(edad)
+
 
 
 # Solicita una nota y comprueba que esté entre 0 y 10.
+
 def pedir_nota() -> int:
     """
-    Solicita la nota final y verifica que esté entre 0 y 10.
+    Solicita la nota final y verifica que sea numérica
+    y esté entre 0 y 10.
 
     Returns:
         int: Nota ingresada por el usuario.
     """
-    nota = int(input("Ingrese la nota final: "))
+
+    nota = input("Ingrese la nota final: ")
 
     while validar_nota(nota) == False:
-        print("La nota debe estar entre 0 y 10.")
-        nota = int(input("Ingrese la nota final: "))
+        print("La nota debe ser un número entre 0 y 10.")
+        nota = input("Ingrese la nota final: ")
 
-    return nota
+    return int(nota)
+
 
 
 # Registra un alumno nuevo en el diccionario.
@@ -233,7 +240,9 @@ def modificar_nombre(alumnos: dict, dni: str) -> None:
         alumnos (dict): Diccionario con los alumnos registrados.
         dni (str): DNI del alumno que se desea modificar.
     """
+    
     alumnos[dni]["nombre"] = pedir_nombre("Ingrese el nuevo nombre: ")
+
 
 
 # Modifica el apellido de un alumno.
