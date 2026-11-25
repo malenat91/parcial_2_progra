@@ -8,7 +8,7 @@
 
 ### Comisión
 
-- 313
+- [Completar]
 
 ### Lenguaje utilizado
 
@@ -48,6 +48,24 @@ El proyecto se encuentra dividido en cinco módulos:
 
 - `main.py`: contiene el menú principal y coordina las distintas operaciones del programa.
 - `alumnos.py`: contiene las funciones para agregar, listar, buscar, mostrar, modificar y eliminar alumnos.
-- `validaciones.py`: contiene las funciones encargadas
+- `validaciones.py`: contiene las funciones encargadas de validar los DNI, nombres, edades, notas y opciones de modificación.
+- `estadisticas.py`: contiene las funciones para calcular el promedio general, contar aprobados y desaprobados e identificar al alumno con la nota más alta.
+- `archivos.py`: contiene las funciones encargadas de cargar y guardar la información de los alumnos mediante archivos JSON.
 
-###☆¡Gracias por leer!☆
+Además, se utiliza el archivo `alumnos.json` para almacenar los registros y conservar la información entre ejecuciones.
+
+### ▶️ Ejecución del programa
+
+Para ejecutar el programa, es necesario tener Python instalado y abrir el proyecto en un editor de código, como Visual Studio Code. Luego, ejecutar el archivo main.py y seguir las instrucciones del menú.
+
+Una vez iniciado, se mostrará el menú principal con las opciones disponibles. El usuario podrá seleccionar la operación que desea realizar e interactuar con el sistema.
+
+## 🔄 Flujo del programa
+
+Al iniciar el programa, se cargan los alumnos almacenados en el archivo JSON. Luego, se muestra el menú principal y el usuario selecciona una opción.
+
+Según la opción elegida, se solicitan y validan los datos necesarios para realizar la operación correspondiente. Los cambios realizados se guardan en el archivo JSON para conservar la información.
+
+El menú vuelve a mostrarse después de cada operación hasta que el usuario selecciona la opción de salir.
+
+## ☆ ¡Gracias por leer! ☆
