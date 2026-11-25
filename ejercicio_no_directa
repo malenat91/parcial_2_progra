@@ -1,0 +1,26 @@
+libros = {
+    "1001": {
+        "titulo": "Python para principiantes",
+        "autor": "Juan Perez",
+        "anio": 2020,
+        "disponible": True
+    },
+    "1002": {
+        "titulo": "Aprendiendo Java",
+        "autor": "Maria Lopez",
+        "anio": 2019,
+        "disponible": False
+    },
+    "1003": {
+        "titulo": "Programacion en C",
+        "autor": "Pedro Gomez",
+        "anio": 2022,
+        "disponible": True
+    }
+
+}
+
+print(libros["1003"]["autor"])
+
+for clave, valor in libros.items():
+    print(clave, valor)
