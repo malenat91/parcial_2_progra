@@ -1,1 +1,14 @@
-{}
+{
+    "43333333": {
+        "nombre": "Magali",
+        "apellido": "Perdomo",
+        "edad": 25,
+        "nota_final": 10
+    },
+    "45191754": {
+        "nombre": "Malena",
+        "apellido": "Aguirre",
+        "edad": 23,
+        "nota_final": 8
+    }
+}
