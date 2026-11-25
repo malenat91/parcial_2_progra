@@ -179,7 +179,7 @@ def mostrar_alumno(dni: str, datos: dict) -> None:
 
 
 # Busca un alumno y muestra sus datos.
-def buscar_alumno(alumnos: dict) -> None:
+def buscar_alumno(alumnos: dict) -> tuple:
     """
     Busca un alumno por su DNI y muestra su información.
 
